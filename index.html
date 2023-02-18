@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="stylesheet" href="style.css">
+    
+  </head>
+  <body class="container-sm ">
+    <div class="bg-primary  text-dark bg-opacity-25 d-flex justify-content-between container-fluid">
+          <div>
+                <h2 class="fw-bold ">Interactive</h2>
+                <h5>Geometry Genius</h5>
+          </div>
+
+          <div>
+           <a href="blog.html"> <button type="button" class="btn btn-primary mt-3 ml-r">Blog</button></a>
+          </div>
+    </div>
+
+    <main class="mt-5">
+            
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="">
+              <div  id ="card1" class="card ">
+                <img src="images/triangle.png" class="card-img-top ms-5 "style="width: 150px;height: 130px;" alt="">
+                <div class="card-body">
+                  <h5 class="text-center">Triangle</h5>
+                  <h6 class="ms-5">Area(A)=0.5 x b x h</h6>
+                  <input id="firstInput" class="ms-5" style="width: 50px;" type="text"  placeholder="b">cm
+                  <input  id="secondInput" class="" style="width: 50px;" type="text"  placeholder="h">cm
+                  <button id="triangle-button" type="button" class="btn btn-primary mt-2 ms-5">Calculate  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+                <div  id ="card2" class="card  hover:bg-secondary">
+                  <img src="images/rectangle.png" class="card-img-top ms-3 pt-3" style="width: 200px;height: 130px;" alt="...">
+                  <div class="card-body  hover:bg-secondary">
+                    <h5 class="text-center">Rectangle</h5>
+                    <h6 class="text-center">Area(A)= w x l</h6>
+                    <input class="ms-5" style="width: 50px;" type="text" id="recfirstInput" placeholder="w">cm
+                    <input class="" style="width: 50px;" type="text" id="recsecondInput" placeholder="l">cm
+                    <button id="rectbutton" type="button" class="btn btn-primary mt-2 ms-5">Calculate  </button>
+                    
+                  </div>
+                </div>
+              </div>
+            <div class="col">
+              <div  id ="card3"class="card">
+                <img src="images/parallelogram.png" class="card-img-top ms-3 pt-3" style="width: 200px;height: 130px;" alt="...">
+                <div class="card-body">
+                  <h5 class="text-center">Parallelogram</h5>
+                    <h6 class="text-center">Area(A)= b x h</h6>
+                    <input class="ms-5" style="width: 50px;" type="text" id="parfirstInput" placeholder="b">cm
+                    <input class="" style="width: 50px;" type="text" id="parsecondInput" placeholder="h">cm
+                    <button id="parbutton" type="parbutton" class="btn btn-primary mt-2 ms-5">Calculate  </button>
+                </div>
+              </div>
+            </div>
+            <div class="">
+              <div class="card">
+                
+                <div id="Answerfield" style="width: 100px; height: 300px;" class=" ">
+                  <p> Area Calculation</p> <hr>
+                  
+                 
+                 
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div id ="card4" class="card">
+                <img src="images/rhombus.png" class="card-img-top ms-3 pt-3" style="width: 200px;height: 130px;" alt="...">
+                <div class="card-body">
+                  <h5 class="text-center">rhombus</h5>
+                    <h6 class="text-center">Area(A)=0.5 x d1 x d2</h6>
+                    <input class="ms-5" style="width: 50px;" type="text" id="romfirstInput" placeholder="d1">cm
+                    <input class="" style="width: 50px;" type="text" id="romsecondInput" placeholder="d2">cm
+                    <button id="rombutton" type="button" class="btn btn-primary mt-2 ms-5">Calculate  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div  id ="card5"class="card">
+                <img src="images/pentagon.png" class="card-img-top ms-3 pt-3" style="width: 200px;height: 130px;" alt="...">
+                <div class="card-body">
+                  <h5 class="text-center">Pentagon</h5>
+                    <h6 class="text-center">Area(A)=0.5 x p x b</h6>
+                    <input class="ms-5" style="width: 50px;" type="text" id="penfirstInput" placeholder="p">cm
+                    <input class="" style="width: 50px;" type="text" id="pensecondInput" placeholder="b">cm
+                    <button id="penbutton"type="button" class="btn btn-primary mt-2 ms-5">Calculate  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div  id ="card6" class="card">
+                <img src="..." class="card-img-top" alt="...">
+                <img src="images/ellipse.png" class="card-img-top ms-3 pt-3" style="width: 200px;height: 120px;" alt="...">
+                <div class="card-body">
+                  <h5 class="text-center">Ellipse</h5>
+                    <h6 class="text-center">Area(A)=π x a x b</h6>
+                    <input class="ms-5" style="width: 50px;" type="text" id="ellfirstInput" placeholder="a">cm
+                    <input class="" style="width: 50px;" type="text" id="ellsecondInput" placeholder="b">cm
+                    <button id="ellbutton" type="button" class="btn btn-primary mt-2 ms-5">Calculate  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="js.js"></script>
+  </body>
+</html>
